@@ -1,0 +1,48 @@
+{
+  "name": "penguinctl",
+  "full_name": "penguinctl",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Penguin CLI",
+  "license": null,
+  "homepage": "https://github.com/vmware-tanzu-learning/penguinctl",
+  "versions": {
+    "stable": "0.1.2",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.2/penguinctl_v0.1.2_darwin_amd64.tar.gz",
+      "tag": null,
+      "revision": null
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "keg_only_reason": null,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [],
+  "test_dependencies": [],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}
