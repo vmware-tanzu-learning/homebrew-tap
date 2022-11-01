@@ -6,39 +6,21 @@ require_relative "lib/custom_download_strategy"
 class Penguinctl < Formula
   desc "Penguin CLI"
   homepage "https://github.com/vmware-tanzu-learning/penguinctl"
-  version "0.1.9"
+  version "0.1.13"
+  depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.9/penguinctl_v0.1.9_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "72ef8d4d6acf5c01c0dda12e9802567ee8bd6e44e15026f0ca38700bb086e4bd"
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.13/penguinctl_v0.1.13_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "819c62b732d6d778d8892e1be7f95fb8478204a2ec89b6b668272dca50a8a8f8"
 
       def install
         bin.install "penguinctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.9/penguinctl_v0.1.9_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a2ef358820fea73669d703c397d05a3b91743680619e8af10c64ac447cc596a2"
-
-      def install
-        bin.install "penguinctl"
-      end
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.9/penguinctl_v0.1.9_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "ef2290bd6cef27d3fa0940f7a104ca4c94563f569221a706566273be750a5e20"
-
-      def install
-        bin.install "penguinctl"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.9/penguinctl_v0.1.9_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "97b270972605bb195d5ee55fefd15c153935d0d6447a8ab24d60bc8a5db36142"
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.1.13/penguinctl_v0.1.13_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "348ea8e44fa4d250636a4084c7b9fe56447da8de9c4b170a7994889c438690ea"
 
       def install
         bin.install "penguinctl"
