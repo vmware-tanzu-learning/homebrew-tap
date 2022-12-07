@@ -6,20 +6,20 @@ require_relative "lib/custom_download_strategy"
 class Penguinctl < Formula
   desc "Penguin CLI"
   homepage "https://github.com/vmware-tanzu-learning/penguinctl"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.2/penguinctl_v0.2.2_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "46e96ad748d2732d09ff8dc68518e313a6542aae9c928ad926fe6d4004cca626"
+    if Hardware::CPU.arm?
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.3/penguinctl_v0.2.3_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "8f1e886ae3c177ce65d25898187ce3728f5aa8a1481aaa4d5c6a6384b5af5a37"
 
       def install
         bin.install "penguinctl"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.2/penguinctl_v0.2.2_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "0024054b8a18aac87b8579f2b1a251c3d30e77adc5d4526ff4b09587619d5ede"
+    if Hardware::CPU.intel?
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.3/penguinctl_v0.2.3_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "a7eef15fa3c80e67ceacf5cc1f702f6bd129df2c421c40784e1323e74b38e165"
 
       def install
         bin.install "penguinctl"
@@ -29,16 +29,16 @@ class Penguinctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.2/penguinctl_v0.2.2_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "fd52ecc9f9f0da1afdaee3746234a4f25d03d451242a97d25bf1fad794776e56"
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.3/penguinctl_v0.2.3_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "77d2c6fde37e69de74b4f0ca5a8ab14d7f7db9c35b986206f30c9914193afce1"
 
       def install
         bin.install "penguinctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.2/penguinctl_v0.2.2_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "2d2718495a422700b3c691002a3199a1187a3fef46388c2807429d2207e6957e"
+      url "https://github.com/vmware-tanzu-learning/penguinctl/releases/download/v0.2.3/penguinctl_v0.2.3_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "65d695538114ad77f1e4911392bcc522f510cf2859bbb49e31c542a2c475e694"
 
       def install
         bin.install "penguinctl"
