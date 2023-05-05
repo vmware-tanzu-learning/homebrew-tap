@@ -1,0 +1,57 @@
+{
+  "name": "penguinctl",
+  "full_name": "penguinctl",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "Penguin CLI",
+  "license": null,
+  "homepage": "https://github.com/vmware-tanzu-learning/penguinctl",
+  "versions": {
+    "stable": "0.5.2",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.5.2/penguinctl_v0.5.2_darwin_amd64.tar.gz",
+      "tag": null,
+      "revision": null,
+      "checksum": "e59dd194780f3b940858761e58595ef10567cf295db23fec667b366ef59246c7"
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "keg_only_reason": null,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [],
+  "test_dependencies": [],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "conflicts_with_reasons": [],
+  "link_overwrite": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null,
+  "service": null,
+  "tap_git_head": null,
+  "ruby_source_checksum": {
+    "sha256": "de649e206e5b0be8d2388caf4bcb210f391c21a66a40c03e898e1b6f6456f422"
+  },
+  "ruby_source_path": null
+}
