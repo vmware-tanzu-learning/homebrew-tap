@@ -10,16 +10,16 @@
   "license": null,
   "homepage": "https://github.com/vmware-tanzu-learning/penguinctl",
   "versions": {
-    "stable": "0.5.3",
+    "stable": "0.6.0",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.5.3/penguinctl_v0.5.3_darwin_amd64.tar.gz",
+      "url": "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.0/penguinctl_v0.6.0_darwin_amd64.tar.gz",
       "tag": null,
       "revision": null,
-      "checksum": "e2996af9022440002192d6274a2e5386bd49eaaa50a90a2a75bcfcc74c0d8c4b"
+      "checksum": "d4b8172a9812827a74b2582987bc6f04b75ac462dc5ce12078249f171a10cd6e"
     }
   },
   "revision": 0,
@@ -53,6 +53,6 @@
   "tap_git_head": null,
   "ruby_source_path": null,
   "ruby_source_checksum": {
-    "sha256": "5e4d8f1954f2651ad6ce26a46bf947ba6a76967530eca0a8f3b8ebfde17eaccb"
+    "sha256": "1f7ec5d7091ac29500adabcd3680088cd9c92b661dc3df1e3372b98eff8cdd71"
   }
 }
