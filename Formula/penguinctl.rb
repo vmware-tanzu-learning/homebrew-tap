@@ -5,20 +5,20 @@
 class Penguinctl < Formula
   desc "Penguin CLI"
   homepage "https://github.com/vmware-tanzu-learning/penguinctl"
-  version "0.6.4"
+  version "0.6.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.4/penguinctl_v0.6.4_darwin_amd64.tar.gz"
-      sha256 "5f7e29d568e990f475e65308e4a2f3aa7f17078bd7d93082c09c713f82a06493"
+      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.5/penguinctl_v0.6.5_darwin_amd64.tar.gz"
+      sha256 "5ecd010382a622ab34d25afda48d7c3c3af4fe87ea8f3c115ea9a8f9e4484247"
 
       def install
         bin.install "penguinctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.4/penguinctl_v0.6.4_darwin_arm64.tar.gz"
-      sha256 "aa609da0cd46411b60e030b4e2cad37c39c2d6b124046e0df608da0da2323fdc"
+      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.5/penguinctl_v0.6.5_darwin_arm64.tar.gz"
+      sha256 "b9d1d0375af7d866503f1ee3d4989739b187f4150fcc74255a1ba1dc890d5220"
 
       def install
         bin.install "penguinctl"
@@ -28,16 +28,16 @@ class Penguinctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.4/penguinctl_v0.6.4_linux_arm64.tar.gz"
-      sha256 "2c86d025de21caf020f0c5a55c096c019cf68a06827825a186696d22ba0e7776"
+      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.5/penguinctl_v0.6.5_linux_arm64.tar.gz"
+      sha256 "4697e9d26bc1ea420a91248f634c68981c27f1144c917403f02279678cf7eb70"
 
       def install
         bin.install "penguinctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.4/penguinctl_v0.6.4_linux_amd64.tar.gz"
-      sha256 "7c34c1342d19e9bb657369f367d1ef6bcd251daf3bca685113c4673adb16f9e8"
+      url "https://github.com/vmware-tanzu-learning/penguinctl-release/releases/download/v0.6.5/penguinctl_v0.6.5_linux_amd64.tar.gz"
+      sha256 "d987b3910cd745a99b8e771aa5e878f0db26e1b512424a83ecfa08af170a8e84"
 
       def install
         bin.install "penguinctl"
